@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CorreosController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
 use App\Models\Galeria;
@@ -114,3 +115,6 @@ require __DIR__ . '/modal.php';
 Route::get('/error', function () {
     return view('Errors.404')->middleware(['auth']);
 });
+
+
+Route::post('/enviar-comentarios', [CorreosController::class, 'enviar_comenatrio'])->name('enviar.comentarios');

@@ -605,13 +605,15 @@
                     <div class="py-md-5">
                         <div class="heading-section heading-section-white ftco-animate mb-5">
                         </div>
-                        <form action="#" class="appointment-form ftco-animate">
+                        <form action="{{ route('enviar.comentarios') }}" method="POST"
+                            class="appointment-form ftco-animate">
+                            @csrf
                             <div class="d-md-flex">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Nombre">
+                                    <input type="text" name="nombre[]" class="form-control" placeholder="Nombre">
                                 </div>
                                 <div class="form-group ml-md-4">
-                                    <input type="text" class="form-control" placeholder="Apellidos">
+                                    <input type="text" name="nombre[]" class="form-control" placeholder="Apellidos">
                                 </div>
                             </div>
                             <div class="d-md-flex">
@@ -619,22 +621,23 @@
                                     <div class="form-field">
                                         <div class="select-wrap">
                                             <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                                            <select name="" id="" class="form-control">
-                                                <option value="">Seleccionar especialidad</option>
-                                                <option value="">Especialización en América del Norte</option>
-                                                <option value="">Especialización en China</option>
-                                                <option value="">Especialización en Japón</option>
+                                            <select name="especialidad" id="" class="form-control">
+                                                <option value="Seleccionar especialidad">Seleccionar especialidad</option>
+                                                <option value="Especialización en América del Norte">Especialización en
+                                                    América del Norte</option>
+                                                <option value="Especialización en China">Especialización en China</option>
+                                                <option value="Especialización en Japón">Especialización en Japón</option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group ml-md-4">
-                                    <input type="email" class="form-control" placeholder="Correo electrónico" required>
+                                    <input type="email" class="form-control" name="email" placeholder="Correo electrónico" required>
                                 </div>
                             </div>
                             <div class="d-md-flex">
                                 <div class="form-group">
-                                    <textarea name="" id="" cols="30" rows="2" class="form-control" placeholder="Mensaje"></textarea>
+                                    <textarea name="mensaje" id="" cols="30" rows="2" class="form-control" placeholder="Mensaje"></textarea>
                                 </div>
                                 <div class="form-group ml-md-4">
                                     <input type="submit" value="Enviar Correo" class="btn btn-primary py-3 px-4">
