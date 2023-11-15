@@ -39,7 +39,7 @@
         integrity="sha512-v1QB+mqbivmIqbtRFA+0o9lCOPT6BqW5xkWTPt5of0G3h5xnNzQp0skVhtZNah54qJ9PdsAqPOcMd5/tP/YlGQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
+        
 </head>
 
 <body>
@@ -204,7 +204,7 @@
                         <!-- SM icons -->
                         <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-1">
                             <a href="https://twitter.com/gpandtps" class="fa fa-twitter"
-                                style="font-size: 50px; background: #1da1f2;  /* fallback for old browsers */						
+                                style="font-size: 50px; background: #1da1f2;  /* fallback for old browsers */
 						-webkit-background-clip: text;
 						color: transparent;"
                                 target="_blank"></a>
@@ -225,7 +225,7 @@
 							color: transparent;"
                                 target="_blank"></a>
                             <a href="https://www.facebook.com/gpandtps" class="fa fa-facebook"
-                                style="font-size: 50px; background: #3b5998;  /* fallback for old browsers */						
+                                style="font-size: 50px; background: #3b5998;  /* fallback for old browsers */
 						-webkit-background-clip: text;
 						color: transparent;"
                                 target="_blank"></a>

@@ -29,8 +29,8 @@ class EnviarCorreos extends Mailable
      */
     public function build()
     {
-        $nombre = $this->arreglo['nombre'] . "" . $this->arreglo['apellidos'];
-        return $this->subject('Comentario en página web MAESTRIA EN GLOBAL POLITICS AND TRANSPACIFIC')
+        $nombre = $this->arreglo['nombre'] . " " . $this->arreglo['apellidos'];
+        return $this->subject('Comentario en página web MGP&TPS ')
             ->from(
                 $this->arreglo['email'],
                 "Comenatrio de la página web"

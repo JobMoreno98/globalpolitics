@@ -588,7 +588,7 @@
     <br>
 
     <!--Formulario Inicio-->
-
+    @include('sweetalert::alert')
     <section class="ftco-section ftco-consult ftco-no-pt ftco-no-pb" style="background-image: url(images/carrusel3.jpg);"
         data-stellar>
         <div class="overlay"></div>
@@ -632,7 +632,8 @@
                                     </div>
                                 </div>
                                 <div class="form-group ml-md-4">
-                                    <input type="email" class="form-control" name="email" placeholder="Correo electrónico" required>
+                                    <input type="email" class="form-control" name="email"
+                                        placeholder="Correo electrónico" required>
                                 </div>
                             </div>
                             <div class="d-md-flex">
